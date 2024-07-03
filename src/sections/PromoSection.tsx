@@ -2,8 +2,8 @@ import { useState } from "react";
 import Button from "../components/Button";
 import { loadStripe } from "@stripe/stripe-js";
 
-const publicKey = import.meta.env.VITE_STRIPE_PUBLIC_KEY as string | undefined;
-const stripePromise = publicKey ? loadStripe(publicKey) : Promise.resolve(null);
+const publicKey: string = import.meta.env.VITE_STRIPE_PUBLIC_KEY as string;
+const stripePromise = loadStripe(publicKey);
 
 export default function PromoSection() {
     const [loading, setLoading] = useState(false);
@@ -12,6 +12,12 @@ export default function PromoSection() {
         setLoading(true);
         try {
             const stripe = await stripePromise;
+
+            if (!stripe) {
+                console.error("Stripe failed to load.");
+                setLoading(false);
+                return;
+            }
 
             // Make a call to your server to create a checkout session
             const response = await fetch("https://api.stripe.com/v1/checkout/sessions", {
