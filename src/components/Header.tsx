@@ -25,12 +25,12 @@ export default function Header() {
                     ))}
                 </div>
             </div>
-            <div className="row items-center gap-12">
+            {/* <div className="row items-center gap-12">
                 <ThemeControl />
                 <div className="hidden sm:block">
                     <Button>Connect Wallet</Button>
                 </div>
-            </div>
+            </div> */}
         </header>
     );
 }

@@ -1,6 +1,52 @@
+import { useState } from "react";
 import Button from "../components/Button";
+import { loadStripe } from "@stripe/stripe-js";
+
+const stripePromise = loadStripe(`${import.meta.env.VITE_STRIPE_PUBLIC_KEY}`);
 
 export default function PromoSection() {
+    const [loading, setLoading] = useState(false);
+
+    const handleJoinNow = async () => {
+        setLoading(true);
+        try {
+            const stripe = await stripePromise;
+
+            // Make a call to your server to create a checkout session
+            const response = await fetch("https://api.stripe.com/v1/checkout/sessions", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded",
+                    Authorization: `Bearer ${import.meta.env.VITE_STRIPE_SECRET_KEY}`,
+                },
+                body: new URLSearchParams({
+                    "payment_method_types[]": "card",
+                    "line_items[0][price]": "price_1PXfevBasrOlZ9Obo1JYEGT2", // Replace with your actual Price ID
+                    "line_items[0][quantity]": "1",
+                    mode: "payment",
+                    success_url:
+                        "http://localhost:5173/payment-success?session_id={CHECKOUT_SESSION_ID}",
+                    cancel_url: "http://localhost:5173/payment-failed",
+                }),
+            });
+
+            const session = await response.json();
+
+            // Redirect to Stripe Checkout
+            const { error } = await stripe.redirectToCheckout({
+                sessionId: session.id,
+            });
+
+            if (error) {
+                console.error("Error:", error);
+            }
+        } catch (error) {
+            console.error("Error:", error);
+        } finally {
+            setLoading(false);
+        }
+    };
+
     return (
         <section className="relative w-full min-h-[400px] row items-end justify-around gap-4">
             <img
@@ -12,55 +58,13 @@ export default function PromoSection() {
             <article className="col gap-6 items-start justify-center h-[inherit] md:max-w-[40%] m-2 lg:-translate-y-10">
                 <h4 className="font-redzone text-6xl">Join Us now</h4>
                 <span className="text-gray-200">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem illo
-                    eaque fugiat pariatur error!
+                    Take advantage of our special offer and join the Huso Web3 Mentorship
+                    Program. Enroll now for only $295, discounted from $499.
                 </span>
-                <Button outline>Join Tournament</Button>
+                <Button outline onClick={handleJoinNow} disabled={loading}>
+                    {loading ? "Loading..." : "Join Now"}
+                </Button>
             </article>
-        </section>
-    );
-}
-
-export function PromoSectionV2() {
-    return (
-        <section className="w-full">
-            <div className="relative bg-gradient-to-bl from-sky-700 via-purple-700 to-blue-800 rounded-3xl p-3 md:p-0 min-h-[394px] row justify-around">
-                <img
-                    className="object-scale-down max-w-[200px] sm:max-w-sm max-h-[inherit] overflow-hidden"
-                    src="/assets/vr-person.webp"
-                    alt="vr_person"
-                />
-                <article className="col gap-6 items-start justify-center h-[inherit] md:max-w-[40%] m-2">
-                    <h4 className="font-redzone text-6xl">Join Us now</h4>
-                    <span className="text-app_gray">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem illo
-                        eaque fugiat pariatur error!
-                    </span>
-                    <Button outline>Join Tournament</Button>
-                </article>
-            </div>
-        </section>
-    );
-}
-
-export function PromoSectionV1() {
-    return (
-        <section className="w-full pt-28">
-            <div className="relative bg-gradient-to-bl from-sky-700 via-purple-700 to-blue-800 rounded-3xl h-[394px]">
-                <img
-                    className="object-scale-down max-w-[200px] sm:max-w-sm max-h-[inherit] absolute left-4 md:left-32 scale-150 -top-24 "
-                    src="/assets/vr-person.webp"
-                    alt="vr_person"
-                />
-                <article className="absolute col gap-6 items-start justify-center h-[inherit] right-1 max-w-[50%]">
-                    <h4 className="font-redzone text-6xl">Join Us now</h4>
-                    <span className="text-gray-100">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem illo
-                        eaque fugiat pariatur error!
-                    </span>
-                    <Button outline>Join Tournament</Button>
-                </article>
-            </div>
         </section>
     );
 }

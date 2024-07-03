@@ -11,18 +11,18 @@ const tags = [
 export default function AboutSection() {
     return (
         <section className="w-full flex flex-col-reverse md:flex-row-reverse items-center">
-            <div className="text md:w-1/2 col gap-4 my-2">
+            <div className="text md:w-1/2 flex flex-col gap-4 my-2">
                 <Heading
                     className="max-w-[90%]"
                     heading="About Us"
                     subHeading="Discover more Collect And Sell Rare NFTs"
                 />
                 <span className="text-app_gray/80 leading-8 text-xl">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, eum
-                    praesentium? Numquam officiis totam consequuntur dignissimos alias,
-                    quae autem!
+                    Welcome to our exclusive 1-on-1 Web3 Mentorship Program, where we
+                    connect you with seasoned experts to accelerate your journey in the
+                    rapidly evolving world of blockchain and decentralized technologies.
                 </span>
-                <div className="row gap-2">
+                <div className="flex flex-wrap gap-2">
                     {tags.map((tag, i) => (
                         <button
                             key={i}

@@ -10,21 +10,24 @@
         "deploy": "npx tailwindcss build src/index.css -o build.css && yarn build"
     },
     "dependencies": {
+        "@stripe/react-stripe-js": "^2.7.2",
         "framer-motion": "^10.12.10",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-icons": "^4.8.0"
     },
     "devDependencies": {
+        "@types/node": "^20.14.9",
         "@types/react": "^18.0.26",
         "@types/react-dom": "^18.0.9",
         "@vitejs/plugin-react": "^3.0.0",
         "autoprefixer": "^10.4.13",
-        "axios": "^1.2.2",
+        "axios": "^1.7.2",
         "postcss": "^8.4.20",
         "sass": "^1.57.1",
         "tailwindcss": "^3.2.4",
         "typescript": "^4.9.3",
         "vite": "^4.0.0"
-    }
+    },
+    "proxy": "http://127.0.0.1:5000"
 }

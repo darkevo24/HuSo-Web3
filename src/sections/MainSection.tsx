@@ -12,8 +12,21 @@ export default function MainSection() {
                     ready to sell your collection.
                 </span>
                 <div className="row gap-4">
-                    <Button>Get Started</Button>
-                    <Button outline={true}>Join Discord</Button>
+                    <Button
+                        onClick={() => {
+                            window.location.assign("https://t.me/HusoFdkr");
+                        }}
+                    >
+                        Get Started
+                    </Button>
+                    <Button
+                        onClick={() => {
+                            window.location.assign("https://t.me/HusoFdkr");
+                        }}
+                        outline={true}
+                    >
+                        Join Telegram
+                    </Button>
                 </div>
             </div>
             <div className="relative md:w-1/2 col gap-4 center">
