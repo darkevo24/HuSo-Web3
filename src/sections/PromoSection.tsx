@@ -2,7 +2,7 @@ import { useState } from "react";
 import Button from "../components/Button";
 import { loadStripe } from "@stripe/stripe-js";
 
-const publicKey: string = import.meta.env.VITE_STRIPE_PUBLIC_KEY as string;
+const publicKey: string = `${import.meta.env.VITE_STRIPE_PUBLIC_KEY}` as string;
 const stripePromise = loadStripe(publicKey);
 
 export default function PromoSection() {
