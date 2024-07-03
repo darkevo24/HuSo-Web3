@@ -2,7 +2,9 @@ import { useState } from "react";
 import Button from "../components/Button";
 import { loadStripe } from "@stripe/stripe-js";
 
-const stripePromise = loadStripe(`${import.meta.env.VITE_STRIPE_PUBLIC_KEY}`);
+const stripePromise: Promise<Stripe | null> = loadStripe(
+    import.meta.env.VITE_STRIPE_PUBLIC_KEY as string
+);
 
 export default function PromoSection() {
     const [loading, setLoading] = useState(false);
