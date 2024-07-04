@@ -4,12 +4,12 @@ export default function MainSection() {
     return (
         <section className="w-full flex flex-col md:flex-row center gap-8">
             <div className="text md:w-1/2 col gap-8">
-                <h1 className="md:text-8xl text-5xl font-redzone">
-                    Discover Collect Sell Digital NFT.
+                <h1 className="md:text-5xl text-3xl font-redzone">
+                    Discover absolutely everything in the cryptocurrency and blockchain
+                    ecosystem
                 </h1>
                 <span className="text-app_gray leading-8 text-xl">
-                    Generate 10,000+ NDT Collection Only by uploading the layers, and get
-                    ready to sell your collection.
+                    Only by uploading the layers, get ready to sell your collection.
                 </span>
                 <div className="row gap-4">
                     <Button

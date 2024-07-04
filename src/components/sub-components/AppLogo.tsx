@@ -7,7 +7,7 @@ export default function AppLogo({ className, ...props }: Props) {
         <div {...props}>
             <h2 className={`text-4xl font-redzone app-logo ${className}`}> Huso</h2>
             <p className="mt-2 text-sm font-redzone app-logo">
-                Also Huso stands for Hustle, University, Succeed, Others.
+                Hustle, university, succeed, overpower.
             </p>
         </div>
     );

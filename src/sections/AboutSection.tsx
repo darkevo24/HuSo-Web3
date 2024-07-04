@@ -15,7 +15,7 @@ export default function AboutSection() {
                 <Heading
                     className="max-w-[90%]"
                     heading="About Us"
-                    subHeading="Discover more Collect And Sell Rare NFTs"
+                    subHeading="Discover more about Web3 and blockchain technology through personalized mentorship"
                 />
                 <span className="text-app_gray/80 leading-8 text-xl">
                     Welcome to our exclusive 1-on-1 Web3 Mentorship Program, where we
