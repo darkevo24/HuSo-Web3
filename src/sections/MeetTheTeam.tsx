@@ -4,28 +4,28 @@ const teamMembers = [
     {
         name: "Huseyin",
         role: "MD",
-        image: "https://media.licdn.com/dms/image/C5603AQGqEaQo99fbXw/profile-displayphoto-shrink_200_200/0/1610134482939?e=1725494400&v=beta&t=Wkuy8mWEwTR1UF0E2NI8xnlhLbItkGZU15wvuLdVoMo",
+        image: "/assets/huseyin.jpeg",
         description:
             "Huseyin is the visionary behind our company with over 5 years working within different positions in banks and within the blockchain ecosystem.",
     },
     {
         name: "Vish",
         role: "CTO",
-        image: "https://media.licdn.com/dms/image/D4D03AQGTGUv2zxpazA/profile-displayphoto-shrink_200_200/0/1719225218106?e=1725494400&v=beta&t=ILCGVsF2fMgNt36vdkJmrzh1JJQMLvRHerjG_PzsLj0",
+        image: "/assets/vish.jpeg",
         description:
             "Vishaal is a seasoned professional with a diverse background in entrepreneurship and corporate roles, including Consulting at Accenture and PwC, and leadership positions such as COO, CMO, and CPO. He has experience in Esports, AI, Blockchain, and Marketing.",
     },
     {
         name: "Timotius",
         role: "Blockchain Developer",
-        image: "https://media.licdn.com/dms/image/D5603AQEvQiK3B-BSBA/profile-displayphoto-shrink_200_200/0/1696452416867?e=1725494400&v=beta&t=H4LbIWI1-c1Ftiv9xyMYjBp2VxbsmUiSIFWfkcWy6Uo",
+        image: "/assets/timotius.png",
         description:
             "Timotius is our Blockchain developer with a passion for innovation and cutting-edge technology. He has more than 4 years experience in blockchain development and has worked on multiple projects in the blockchain space.",
     },
     {
         name: "Stanley",
         role: "CMO",
-        image: "../../public/assets/CMO.png",
+        image: `/assets/CMO.png`,
         description:
             "I'm stanley, a seasoned expert in marketing and branding with over 6 years of experience in e-commerce. I inject a wide range of marketing strategies to help businesses grow and succeed.",
     },
