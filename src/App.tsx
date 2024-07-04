@@ -12,6 +12,7 @@ import Popularity from "./sections/Popularity";
 import PromoSection from "./sections/PromoSection";
 import Animate from "./components/Animate";
 import { theme, APP_BODY_ID } from "./utils";
+import MeetTheTeam from "./sections/MeetTheTeam";
 
 const Components = [
     { El: Header, id: routes.home },
@@ -19,7 +20,8 @@ const Components = [
     { El: Popularity, id: routes.popular },
     { El: AboutSection, id: routes.about },
     { El: FeaturesSection, id: routes.features },
-    { El: CollectionSection, id: routes.collection },
+    // { El: CollectionSection, id: routes.collection },
+    { El: MeetTheTeam, id: routes.meetTheTeam },
     { El: FAQSection, id: routes.faq },
     { El: PromoSection, id: routes.promo },
     { El: FooterSection, id: routes.footer },
