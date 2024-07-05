@@ -4,9 +4,9 @@ import { RiWallet3Line } from "react-icons/ri";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 
 const values = [
-    { value: "1.5", label: "Collections" },
-    { value: "102", label: "Artworks" },
-    { value: "3.2", label: "Artisits" },
+    { value: "316", label: "Students" },
+    { value: "102", label: "Non fungible tokens (NFT)" },
+    { value: "73", label: "Meetings booked" },
 ];
 
 const cards: CardProps[] = [
@@ -37,7 +37,8 @@ export default function Popularity() {
                 {values.map((it, i) => (
                     <div key={i}>
                         <span className="md:text-8xl text-6xl font-redzone flex-1">
-                            {it.value}K+
+                            {it.value}
+                            {it.label === "Non fungible tokens (NFT)" ? "K+" : "+"}
                         </span>
                         <br />
                         <span className="text-xl pt-4">{it.label}</span>
