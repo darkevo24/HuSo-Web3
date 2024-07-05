@@ -22,7 +22,11 @@ export default function FooterSection() {
                         {socialIcons.map((Icon, i) => (
                             <a
                                 key={i}
-                                href="#"
+                                href={
+                                    Icon === AiOutlineTwitter
+                                        ? "https://x.com/HusoFdkr"
+                                        : "#"
+                                }
                                 className="hover:text-white/50 text-white"
                             >
                                 <Icon size={18} color="inherit" />

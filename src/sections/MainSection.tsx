@@ -9,7 +9,8 @@ export default function MainSection() {
                     ecosystem
                 </h1>
                 <span className="text-app_gray leading-8 text-xl">
-                    Only by uploading the layers, get ready to sell your collection.
+                    We give you all the knowledge you need in the cryptocurrency space,
+                    knowledge = financial gain.
                 </span>
                 <div className="row gap-4">
                     <Button
