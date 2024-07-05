@@ -36,6 +36,11 @@ export default function MainSection() {
                     alt="photo_1"
                     className="w-[86%] h-[70%] object-contain"
                 />
+                <div className="inline-block whitespace-nowrap overflow-hidden border-r-2 border-white animate-typing">
+                    <p className="text-white">
+                        Numbers don’t lie. We walk the talk not talk the talk.
+                    </p>
+                </div>
                 <img
                     src="/assets/photo2.jpg"
                     alt="photo_2"
