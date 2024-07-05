@@ -35,9 +35,9 @@ export default function AboutSection() {
             </div>
             <div className="md:w-1/2 my-2 h-full">
                 <img
-                    src="/assets/robo.png"
-                    alt="robo"
-                    className="object-contain max-w-[80%] max-h-[90%] mx-auto"
+                    src="/assets/web3-london.jpg"
+                    alt="web3-london"
+                    className="object-contain max-w-[80%] max-h-[90%] mx-auto rounded-lg"
                 />
             </div>
         </section>

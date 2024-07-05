@@ -34,7 +34,7 @@ export default function MainSection() {
                 <img
                     src="/assets/photo1.jpg"
                     alt="photo_1"
-                    className="w-[86%] h-[70%] object-contain"
+                    className="w-[86%] h-[70%] object-contain rounded-lg"
                 />
                 <div className="inline-block whitespace-nowrap overflow-hidden border-r-2 border-white animate-typing">
                     <p className="text-white">
@@ -44,7 +44,7 @@ export default function MainSection() {
                 <img
                     src="/assets/photo2.jpg"
                     alt="photo_2"
-                    className="w-[86%] h-[70%] object-contain"
+                    className="w-[86%] h-[70%] object-contain rounded-lg"
                 />
             </div>
         </section>
