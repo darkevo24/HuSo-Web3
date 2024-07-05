@@ -10,7 +10,7 @@ const teamMembers = [
     },
     {
         name: "Vish",
-        role: "CTO",
+        role: "Advisor",
         image: "/assets/vish.jpeg",
         description:
             "Vishaal is a seasoned professional with a diverse background in entrepreneurship and corporate roles, including Consulting at Accenture and PwC, and leadership positions such as COO, CMO, and CPO. He has experience in Esports, AI, Blockchain, and Marketing.",
