@@ -54,6 +54,10 @@ export default function PromoSection() {
         }
     };
 
+    const handleJoinNowNew = () => {
+        window.location.assign("https://t.me/HusoFdkr");
+    };
+
     return (
         <section className="relative w-full min-h-[400px] row items-end justify-around gap-4">
             <img
@@ -65,10 +69,10 @@ export default function PromoSection() {
             <article className="col gap-6 items-start justify-center h-[inherit] md:max-w-[40%] m-2 lg:-translate-y-10">
                 <h4 className="font-redzone text-6xl">Join Us now</h4>
                 <span className="text-gray-200">
-                    Take advantage of our special offer and join the Huso Web3 Mentorship
-                    Program. Enroll now for only $295, discounted from $499.
+                    Take advantage of your future to learn about the future of the Web3
+                    ecosystem.
                 </span>
-                <Button outline onClick={handleJoinNow} disabled={loading}>
+                <Button outline onClick={handleJoinNowNew} disabled={loading}>
                     {loading ? "Loading..." : "Join Now"}
                 </Button>
             </article>

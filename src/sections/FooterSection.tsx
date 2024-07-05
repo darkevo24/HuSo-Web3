@@ -6,9 +6,9 @@ import { appLinks } from "../constants";
 const socialIcons = [AiOutlineTwitter, FaBitcoin, RiDiscordFill, FaGithub];
 
 const links = [
-    ["MarketPlace", "About us", "Our team", "Team Details", "Error 404", "Cart Page"],
-    ["Company", "Wallet", "Create Page", "Login Page", "Registration", "Checkout"],
-    ["Services", "Contact Us", "Shop page", "Shop Details", "Collectors"],
+    ["About us", "Our team", "Team Details"],
+    ["Wallet", "Login Page", "Registration", "Checkout"],
+    ["Contact Us", "Shop page", "Shop Details"],
 ];
 
 export default function FooterSection() {
@@ -45,16 +45,12 @@ export default function FooterSection() {
                     <ul key={idx + 1} className="col gap-2">
                         {group.map((link, i) => (
                             <li key={link}>
-                                {i === 0 ? (
-                                    <span className="font-redzone mb-2">{link}</span>
-                                ) : (
-                                    <a
-                                        href={`#${appLinks[i]}`}
-                                        className={`font-nominee text-app_gray text-xs hover:text-white`}
-                                    >
-                                        {link}
-                                    </a>
-                                )}
+                                <a
+                                    href={`#${appLinks[i]}`}
+                                    className={`font-nominee text-app_gray text-xs hover:text-white`}
+                                >
+                                    {link}
+                                </a>
                             </li>
                         ))}
                     </ul>

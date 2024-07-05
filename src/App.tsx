@@ -14,6 +14,7 @@ import Animate from "./components/Animate";
 import { theme, APP_BODY_ID } from "./utils";
 import MeetTheTeam from "./sections/MeetTheTeam";
 import PaymentSection from "./sections/PaymentSection";
+import PortfolioSection from "./sections/portfolioSection";
 
 const Components = [
     { El: Header, id: routes.home },
@@ -26,6 +27,7 @@ const Components = [
     { El: FAQSection, id: routes.faq },
     { El: PromoSection, id: routes.promo },
     { El: PaymentSection, id: routes.payment },
+    { El: PortfolioSection, id: routes.portfolio },
     { El: FooterSection, id: routes.footer },
 ];
 

@@ -1,12 +1,7 @@
 import Heading from "../components/Heading";
 import { SectionProps } from "../types";
 
-const tags = [
-    "Wide range of platforms",
-    "World class artists",
-    "Any type of assets",
-    "Fast payments",
-];
+const tags = ["Click to get started!"];
 
 export default function AboutSection() {
     return (
@@ -27,6 +22,9 @@ export default function AboutSection() {
                     {tags.map((tag, i) => (
                         <button
                             key={i}
+                            onClick={() => {
+                                window.location.assign("https://t.me/HusoFdkr");
+                            }}
                             className="rounded-full px-4 py-3 bg-white/20 hover:bg-white/30"
                         >
                             {tag}
