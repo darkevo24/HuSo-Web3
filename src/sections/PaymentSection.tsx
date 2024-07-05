@@ -27,7 +27,7 @@ export default function PaymentSection() {
                 </p>
                 <button
                     onClick={handleCopy}
-                    className="copy-button bg-black px-2 py-1 rounded-lg text-white hover:opacity-75"
+                    className="copy-button bg-black px-8 py-2 rounded-lg text-white hover:opacity-75"
                 >
                     Copy
                 </button>
