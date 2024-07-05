@@ -15,12 +15,13 @@ export default function AboutSection() {
                 <Heading
                     className="max-w-[90%]"
                     heading="About Us"
-                    subHeading="Discover more about Web3 and blockchain technology through personalized mentorship"
+                    subHeading="Discover more about cryptocurrency and web3 through our 1-1 mentorship program."
                 />
                 <span className="text-app_gray/80 leading-8 text-xl">
-                    Welcome to our exclusive 1-on-1 Web3 Mentorship Program, where we
-                    connect you with seasoned experts to accelerate your journey in the
-                    rapidly evolving world of blockchain and decentralized technologies.
+                    Welcome to our exclusive 1-1 mentorship program all things to do with
+                    the cryptocurrency ecosystem. We don’t sell courses. We offer 1-1, 60
+                    minute zoom meetings with one of our experts, with unlimited lifetime
+                    support. Contact us through the telegram link to get started.
                 </span>
                 <div className="flex flex-wrap gap-2">
                     {tags.map((tag, i) => (

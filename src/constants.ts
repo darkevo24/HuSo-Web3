@@ -8,6 +8,7 @@ export const routes = {
     promo: "promotion",
     footer: "footer",
     meetTheTeam: "meet-the-team",
+    payment: "payment",
 };
 
 export const appLinks = Object.values(routes).map((r) => r);

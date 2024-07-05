@@ -13,6 +13,7 @@ import PromoSection from "./sections/PromoSection";
 import Animate from "./components/Animate";
 import { theme, APP_BODY_ID } from "./utils";
 import MeetTheTeam from "./sections/MeetTheTeam";
+import PaymentSection from "./sections/PaymentSection";
 
 const Components = [
     { El: Header, id: routes.home },
@@ -24,6 +25,7 @@ const Components = [
     { El: MeetTheTeam, id: routes.meetTheTeam },
     { El: FAQSection, id: routes.faq },
     { El: PromoSection, id: routes.promo },
+    { El: PaymentSection, id: routes.payment },
     { El: FooterSection, id: routes.footer },
 ];
 
