@@ -36,22 +36,27 @@ export default function MainSection() {
                     alt="photo_1"
                     className="w-[86%] h-[70%] object-contain rounded-lg"
                 />
-                <div className="inline-block whitespace-nowrap overflow-hidden border-r-2 border-white animate-typing">
+                <div className=" hidden lg:inline-block whitespace-nowrap overflow-hidden border-r-2 border-white animate-typing">
                     <p className="text-white">
                         Numbers don’t lie. We walk the talk not talk the talk.
                     </p>
                 </div>
-                <div className="inline-block whitespace-nowrap overflow-hidden border-r-2 border-white animate-typing">
+                <div className="hidden lg:inline-block whitespace-nowrap overflow-hidden border-r-2 border-white animate-typing">
                     <p className="text-white">
                         What separates HUSO is we share loses but of course our Wins
                         outpace the loses.
                     </p>
                 </div>
-                <div className="inline-block whitespace-nowrap overflow-hidden border-r-2 border-white animate-typing">
+                <div className="hidden lg:inline-block whitespace-nowrap overflow-hidden border-r-2 border-white animate-typing">
                     <p className="text-white">
                         In the market others got to eat also. Player vs Player.
                     </p>
                 </div>
+                <p className="lg:hidden ">
+                    Number don’t lie. We walk the talk, not talk the talk. What separates
+                    HUSO is we share loses but of course our Wins outpace the loses. In
+                    the market others got to eat also. Player vs Player.
+                </p>
                 <img
                     src="/assets/photo2.jpg"
                     alt="photo_2"

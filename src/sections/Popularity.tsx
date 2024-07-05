@@ -32,11 +32,11 @@ const cards: CardProps[] = [
 
 export default function Popularity() {
     return (
-        <section className="bg-white/10 rounded-3xl col w-full">
-            <div className="px-4 row border-b-2 border-app_bg py-6 items-center justify-around gap-4">
+        <section className="bg-white/10 rounded-3xl col w-full ">
+            <div className="px-4 row border-b-2 border-app_bg py-6 items-center justify-around gap-4 text-center">
                 {values.map((it, i) => (
                     <div key={i}>
-                        <span className="md:text-8xl text-6xl font-redzone flex-1">
+                        <span className="md:text-8xl text-6xl font-redzone flex-1 ">
                             {it.value}
                             {it.label === "Non fungible tokens (NFT)" ? "K+" : "+"}
                         </span>
