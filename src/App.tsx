@@ -14,7 +14,7 @@ import Animate from "./components/Animate";
 import { theme, APP_BODY_ID } from "./utils";
 import MeetTheTeam from "./sections/MeetTheTeam";
 import PaymentSection from "./sections/PaymentSection";
-import PortfolioSection from "./sections/portfolioSection";
+import PortfolioSection from "./sections/PortfolioSection";
 
 const Components = [
     { El: Header, id: routes.home },
