@@ -5,8 +5,8 @@ export default function MainSection() {
         <section className="w-full flex flex-col md:flex-row center gap-8">
             <div className="text md:w-1/2 col gap-8">
                 <h1 className="md:text-5xl text-3xl font-redzone">
-                    Discover absolutely everything in the cryptocurrency and blockchain
-                    ecosystem
+                    Discover more about cryptocurrency and web3 through our 1-1 mentorship
+                    program.
                 </h1>
                 <span className="text-app_gray leading-8 text-xl">
                     We give you all the knowledge you need in the cryptocurrency space,
