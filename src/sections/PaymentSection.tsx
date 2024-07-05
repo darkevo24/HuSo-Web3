@@ -21,9 +21,9 @@ export default function PaymentSection() {
             <p className="my-4">Scan the QR code below to pay</p>
             <img src="/assets/btc-address.jpg" alt="btc" className="w-60" />
             <p className="my-4">BTC Deposit Address :</p>
-            <div className="flex items-center gap-2 justify-between">
+            <div className="flex items-center gap-2 justify-between lg:flex-row flex-col">
                 <p className="text-center font-bold">
-                    1BvBMSEYstWetqTFn5A {"\n"}u4m4GFg7xJaNVN2
+                    1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2
                 </p>
                 <button
                     onClick={handleCopy}
