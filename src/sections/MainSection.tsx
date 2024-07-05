@@ -31,8 +31,13 @@ export default function MainSection() {
             </div>
             <div className="relative md:w-1/2 col gap-4 center">
                 <img
-                    src="/assets/etherum.png"
-                    alt="etherum_logo"
+                    src="/assets/photo1.jpg"
+                    alt="photo_1"
+                    className="w-[86%] h-[70%] object-contain"
+                />
+                <img
+                    src="/assets/photo2.jpg"
+                    alt="photo_2"
                     className="w-[86%] h-[70%] object-contain"
                 />
             </div>
