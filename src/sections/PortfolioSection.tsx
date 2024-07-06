@@ -2,7 +2,7 @@ import React from "react";
 
 export default function PortfolioSection() {
     return (
-        <div className="flex items-center justify-center space-y-8 flex-col">
+        <div className="flex items-center justify-center space-x-4">
             <img
                 className="lg:w-3/12 w-full rounded-lg"
                 src="/assets/photo3.jpg"

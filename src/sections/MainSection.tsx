@@ -1,10 +1,11 @@
 import Button from "../components/Button";
+import PortfolioSection from "./PortfolioSection";
 
 export default function MainSection() {
     return (
         <section className="w-full flex flex-col md:flex-row center gap-8">
             <div className="text md:w-1/2 col gap-8">
-                <h1 className="md:text-5xl text-3xl font-redzone">
+                <h1 className="md:text-6xl text-3xl font-redzone">
                     Discover absolutely everything in the cryptocurrency and blockchain
                     ecosystem
                 </h1>
@@ -62,6 +63,7 @@ export default function MainSection() {
                     alt="photo_2"
                     className="w-[86%] h-[70%] object-contain rounded-lg"
                 />
+                <PortfolioSection />
             </div>
         </section>
     );
