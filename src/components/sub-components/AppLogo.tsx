@@ -7,7 +7,7 @@ export default function AppLogo({ className, ...props }: Props) {
         <div {...props}>
             <h2 className={`text-4xl font-redzone app-logo ${className}`}> Huso</h2>
             <p className="mt-2 text-sm font-redzone app-logo">
-                Hustle, university, succeed, overpower.
+                Hustle, university, succeed, Overpower.
             </p>
         </div>
     );
