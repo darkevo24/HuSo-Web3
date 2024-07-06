@@ -19,6 +19,7 @@ import PortfolioSection from "./sections/PortfolioSection";
 const Components = [
     { El: Header, id: routes.home },
     { El: MainSection, id: routes.home },
+    { El: PortfolioSection, id: routes.portfolio },
     { El: Popularity, id: routes.popular },
     { El: AboutSection, id: routes.about },
     { El: FeaturesSection, id: routes.features },
@@ -27,7 +28,6 @@ const Components = [
     { El: FAQSection, id: routes.faq },
     { El: PromoSection, id: routes.promo },
     { El: PaymentSection, id: routes.payment },
-    { El: PortfolioSection, id: routes.portfolio },
     { El: FooterSection, id: routes.footer },
 ];
 
