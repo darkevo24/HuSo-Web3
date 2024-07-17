@@ -52,7 +52,7 @@ export default function QAComponent({ question, answer }: QAProps) {
             </div>
             <div className="overflow-hidden" style={styles.contentStyle}>
                 <div className="py-4 px-4" ref={contentRef}>
-                    {answer ?? dummyAnswer}
+                    <div dangerouslySetInnerHTML={{ __html: answer ?? dummyAnswer }} />
                 </div>
             </div>
         </div>
